@@ -1,0 +1,11 @@
+<label for="countries-list" class="mt-3">Countries</label>
+<ng-multiselect-dropdown id="countries-list" [placeholder]="'Select countries'" [data]="countries"
+  [(ngModel)]="selectedCountries" [settings]="countriesDropdownSettings">
+</ng-multiselect-dropdown>
+
+<label for="devices-list" class="mt-3">Devices</label>
+<ng-multiselect-dropdown id="devices-list" [placeholder]="'Select devices'" [data]="devices"
+  [(ngModel)]="selectedDevices" [settings]="devicesDropdownSettings">
+</ng-multiselect-dropdown>
+
+<button type="button" class="btn btn-primary col-12 mt-3" (click)="onSearchClick()">Search</button>

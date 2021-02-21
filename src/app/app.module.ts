@@ -1,18 +1,24 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 
 import { AppComponent } from './app.component';
+import { TestersTableComponent } from './testers-table/testers-table.component';
+import { SearchPanelComponent } from './search-panel/search-panel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestersTableComponent,
+    SearchPanelComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    ReactiveFormsModule,
+    FormsModule,
+    NgMultiSelectDropDownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

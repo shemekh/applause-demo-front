@@ -22,7 +22,7 @@ export class TestersService {
     return this.httpClient.get<Device[]>('/api/devices');
   }
 
-  getTesters(countries?: string[], deviceIds?: number[]) {
+  getTesters(countries?: string[], deviceIds?: number[]): Observable<Tester[]> {
     let params = new HttpParams()
     if (countries)
       params = params.set('countries', countries.join(','))
