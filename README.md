@@ -6,5 +6,5 @@
     1. npm
 1. In your command line execute:
 ```
-npm install & npm start
+npm run demo
 ```
